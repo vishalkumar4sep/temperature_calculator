@@ -1,16 +1,3 @@
-// Logic for the digital watch
-function currentTime() {
-    let p1 = document.getElementById("p1")
-    let date = new Date();
-    let hr = date.getHours();
-    let mn = date.getMinutes();
-    let ss = date.getSeconds();
-    let current_time = hr + ":" + mn + ":" + ss;
-    p1.innerHTML = current_time;
-    let t = setTimeout(function () { currentTime() }, 1000);
-}
-currentTime();
-// Logic for temperature converter
 function temperature() {
     let inputValue = document.querySelector("#inputValue").value;
     let type1 = document.querySelector("#type1");
